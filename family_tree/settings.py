@@ -9,7 +9,8 @@ SECRET_KEY = "django-insecure-8f*bmp%#3du-#m24k39@s&f$^7@3w-bqy)52grsfef!5+m3nla
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "localhost", "127.0.0.1",
+    "localhost",
+    "127.0.0.1",
 ]
 
 INSTALLED_APPS = [
@@ -20,6 +21,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
+    "family_tree",
+    "family_tree.api",
 ]
 
 MIDDLEWARE = [
