@@ -16,9 +16,9 @@ class HumanSerializer(serializers.ModelSerializer):
         )
 
 
-class FamilyTreeSerializer(serializers.ModelSerializer):
-    father = RecursiveField(source="father_id")
-    mother = RecursiveField(source="mother_id")
+class AncestorsSerializer(serializers.ModelSerializer):
+    father = RecursiveField(source="father_id", allow_null=True)
+    mother = RecursiveField(source="mother_id", allow_null=True)
 
     class Meta:
         model = Human
@@ -31,13 +31,6 @@ class FamilyTreeSerializer(serializers.ModelSerializer):
         )
 
 
-# class AncestorsSerializer(serializers.ModelSerializer):
-#     father = serializers.PrimaryKeyRelatedField(read_only=True)
-#     mother = serializers.PrimaryKeyRelatedField(read_only=True)
-
-#     class Meta:
-#         model = Human
-#         fields = (
-#             "mother",
-#             "father",
-#         )
+class FamilyTreeSerializer(serializers.Serializer):
+    father = AncestorsSerializer(source="father_id", required=False)
+    mother = AncestorsSerializer(source="mother_id", required=False)
