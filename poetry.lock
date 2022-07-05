@@ -47,18 +47,6 @@ django = ">=2.2"
 pytz = "*"
 
 [[package]]
-name = "djangorestframework-recursive"
-version = "0.1.2"
-description = "Recursive Serialization for Django REST framework"
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-Django = "*"
-djangorestframework = ">=3.0"
-
-[[package]]
 name = "psycopg2-binary"
 version = "2.9.3"
 description = "psycopg2 - Python-PostgreSQL Database Adapter"
@@ -85,7 +73,7 @@ python-versions = ">=3.5"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.8.10"
-content-hash = "2e5fc9982ec04e664d0e1906a7099c1a49bad595c09937cc5c242f4f59f60d7c"
+content-hash = "f2c17dc12e7f22b79c1b64d4814de36909349b776b43ee77fece1838dc008202"
 
 [metadata.files]
 asgiref = [
@@ -103,10 +91,6 @@ django = [
 djangorestframework = [
     {file = "djangorestframework-3.13.1-py3-none-any.whl", hash = "sha256:24c4bf58ed7e85d1fe4ba250ab2da926d263cd57d64b03e8dcef0ac683f8b1aa"},
     {file = "djangorestframework-3.13.1.tar.gz", hash = "sha256:0c33407ce23acc68eca2a6e46424b008c9c02eceb8cf18581921d0092bc1f2ee"},
-]
-djangorestframework-recursive = [
-    {file = "djangorestframework-recursive-0.1.2.tar.gz", hash = "sha256:f8fc2d677ccb32fe53ec4153a45f66c822d0ce444824cba56edc76ca89b704ae"},
-    {file = "djangorestframework_recursive-0.1.2-py2.py3-none-any.whl", hash = "sha256:e4e51b26b7ee3c9f9b838885d638b91293e7c66e85b5955f278a6e10eb34ce7c"},
 ]
 psycopg2-binary = [
     {file = "psycopg2-binary-2.9.3.tar.gz", hash = "sha256:761df5313dc15da1502b21453642d7599d26be88bff659382f8f9747c7ebea4e"},

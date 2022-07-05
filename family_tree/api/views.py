@@ -15,5 +15,18 @@ class HumanCreateView(generics.CreateAPIView):
 
 
 class HumanAncestorsView(generics.RetrieveAPIView):
-    queryset = Human.objects.select_related("mother_id", "father_id")
+    queryset = Human.objects.all()
     serializer_class = FamilyTreeSerializer
+
+    # update context with depth parameter
+    def get_serializer_context(self):
+        context = super().get_serializer_context()
+        depth = 0
+        try:
+            depth = int(self.request.query_params.get("depth", 0))
+        except ValueError:
+            pass  # Ignore non-numeric parameters and keep default 0 depth
+
+        context["depth"] = depth
+        print("context depth", context["depth"])
+        return context
