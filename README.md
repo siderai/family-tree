@@ -22,5 +22,5 @@ Python3
 
 ## Acquired skills: 
 1. Worked with nested serializators (DRF)
-2. Created custom recursive field to serialize the same table (people)
-3. Added dynamic depth parameter, provided by url request
+2. Created custom recursive field to serialize the same table (People)
+3. Added dynamic depth parameter, provided by url request, to show certain amount of generations
