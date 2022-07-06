@@ -4,11 +4,11 @@
 
 POST /people - create a person
 
-GET /people/<id> - get person data with parent ids
+GET /people/id - get person data with parent ids (id=int)
   
-GET /people/<id>/ancestors - get a whole family tree of a person
+GET /people/id/ancestors - get the whole family tree of a person
   
-GET /people/<id>/ancestors/?depth=N - get last N generations of ancestors
+GET /people/id/ancestors/?depth=N - get last N generations of ancestors
 
 ## Stack:
 
