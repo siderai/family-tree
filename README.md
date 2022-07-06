@@ -2,13 +2,13 @@
 
 ## Endpoints:
 
-POST /people - create a person
+POST v1/people - create a person
 
-GET /people/id - get person data with parent ids (id=int)
+GET v1/people/id - get person data with parent ids (id=int)
   
-GET /people/id/ancestors - get the whole family tree of a person
+GET v1/people/id/ancestors - get the whole family tree of a person
   
-GET /people/id/ancestors/?depth=N - get last N generations of ancestors
+GET v1/people/id/ancestors/?depth=N - get last N generations of ancestors
 
 ## Stack:
 
