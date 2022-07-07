@@ -4,7 +4,7 @@
 
 POST v1/people - create a person
 
-GET v1/people/id - get person data with parent ids (id=int)
+GET v1/people/id - get person object which contains parent ids (id=int)
   
 GET v1/people/id/ancestors - get the whole family tree of a person
   
